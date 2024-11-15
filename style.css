@@ -1,0 +1,590 @@
+/* ---------------Google Font--------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DynaPuff:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DynaPuff:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&display=swap');
+
+/* Option 2: Import via CSS */
+/* @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.flex {
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    gap: 10px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+p {
+    color: grey;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+html,
+body {
+    min-height: 100vh;
+    width: 100%;
+    /* padding: 0px 20px; */
+    background: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /* gap: 30px; */
+}
+
+/* img {
+    width: 50px;
+} */
+
+/*?------------------- #HEADER STYLE START -------------------*/
+
+.header {
+    padding: 0 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    gap: 40px;
+}
+.navbar img {
+    width: 50px;
+}
+
+
+.button-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    height: 30px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    gap: 0;
+    overflow: hidden;
+}
+
+.celsius,
+.fahrenheit {
+    width: 50%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    transition: background-color 0.3s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.celsius {
+    background: rgb(29, 161, 108);
+    color: white;
+}
+
+.navbar {
+    min-height: fit-content;
+    flex-wrap: wrap;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-section {
+    background: var(--second-bgClr);
+    height: 40px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%;
+    padding: 0px 0px 0px 15px;
+    overflow: hidden;
+    height: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+form .search-field {
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+    background: none;
+    padding-left: 5px;
+    color: var(--text-clr);
+    caret-color: black;
+    font-weight: 500;
+}
+
+form>span {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px 0;
+    gap: 5px;
+    border-bottom: 2px solid black;
+}
+
+.search-field::placeholder {
+    color: var(--text-clr);
+}
+
+.search-form i {
+    font-weight: 500;
+    color: var(--text-clr);
+}
+
+.search-form button {
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: aliceblue;
+    height: 100%;
+    width: 80px;
+    outline: none;
+    border: none;
+    background: rgb(29, 161, 108);
+    border-radius: 0px 0px 0 25px;
+    -webkit-border-radius: 0px 0px 0 25px;
+    -moz-border-radius: 0px 0px 0 25px;
+    -ms-border-radius: 0px 0px 0 25px;
+    -o-border-radius: 0px 0px 0 25px;
+}
+
+.search-form button:hover {
+    background: rgba(29, 161, 108, 0.864);
+}
+
+
+/*?------------------- #HEADER STYLE END -------------------*/
+
+
+/** ------------------- MAIN SECTION STYLE START -------------------*/
+
+.main-section {
+    min-height: 75vh;
+    width: 100%;
+    display: flex;
+    padding: 0 25px;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+/*? main Left Style ==> USER */
+
+.main-section-left {
+    max-height: 85vh;
+    min-width: 250px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: space-between;
+    border-radius: 15px 0 0 15px;
+    -webkit-border-radius: 15px 0 0 15px;
+    -moz-border-radius: 15px 0 0 15px;
+    -ms-border-radius: 15px 0 0 15px;
+    -o-border-radius: 15px 0 0 15px;
+}
+
+.user-name {
+    /* font-family: "Sacramento", cursive; */
+    color: #190f1ea9;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.weather-image {
+    height: 120px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-image img {
+    width: 100px;
+}
+
+.temperature-section {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 0;
+    height: 120px;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 2px solid black;
+}
+
+.condition {
+    width: 100%;
+    height: 160px;
+}
+
+.location-sec {
+    align-items: center;
+}
+
+
+/* main Section right ==>  */
+
+
+.main-section-right {
+    height: 85vh;
+    min-width: calc(100% - 300px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    overflow: auto;
+    border: 1px solid black;
+    border-radius: 0 15px 15px 0;
+    -webkit-border-radius: 0 15px 15px 0;
+    -moz-border-radius: 0 15px 15px 0;
+    -ms-border-radius: 0 15px 15px 0;
+    -o-border-radius: 0 15px 15px 0;
+}
+
+
+
+.right-parts,
+.cards {
+    height: 50%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px 10px;
+    padding: 0 10px;
+    overflow-x: auto;
+}
+
+.right-parts>div,
+.child-card1 {
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.uv-box {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(10, 161, 12);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+/** ------------------- MAIN SECTION STYLE END -------------------*/
+
+/* * -------------------Map Section Start------------------- */
+
+.map-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: 1px solid red;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+/* Footer Style */
+
+footer {
+    align-items: center;
+    background: aliceblue;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 10px 20px;
+}
+
+.creator {
+    min-height: 200px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.social {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.social a {
+    font-size: 1.7em;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.social a:hover {
+    font-size: 2rem;
+    animation: rotate 0.5s linear;
+    -webkit-animation: rotate 0.5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+}
+
+.name {
+    font-size: 3rem;
+    font-family: "Sacramento", cursive;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.social a:first-child {
+    color: blue;
+}
+
+.social a:nth-child(2) {
+    color: rgb(0, 180, 12);
+
+}
+
+
+.social a:nth-child(3) {
+    background-image: linear-gradient(45deg, #833AB4, #FD1D1D, #FCB045);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    /* height for horizontal scrollbar */
+    width: 8px;
+    /* width for vertical scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background-color: aliceblue;
+    /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background-color: rgba(89, 169, 137, 0.137);
+    /* Color of the scrollbar thumb */
+    border-radius: 6px;
+    /* Optional: add rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(31, 113, 80);
+}
+
+/* Map Section  */
+
+#map {
+    height: 55vh;
+    background-color: aliceblue;
+    margin: 10px 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    overflow: hidden;
+}
+
+/* MEdia Query Start For some part */
+
+
+
+@media screen and (max-width:660px) {
+    body {
+        padding: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+        /* flex-direction: column; */
+        gap: 20px 0;
+    }
+
+    .form-section {
+        width: 290px;
+        height: 36px;
+    }
+
+    .search-form button {
+        font-size: .8rem;
+    }
+
+    .search-field {
+        font-size: .8rem;
+    }
+
+    form>span {
+        height: 88%;
+        padding: 0 5px;
+    }
+
+    /* Main Section */
+
+    .main-section {
+        min-height: fit-content;
+        flex-direction: column;
+        gap: 10px 0;
+    }
+
+    /* Main Left */
+
+    .main-section-left {
+        width: 100%;
+        height: 500px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+
+    /* Main -right */
+
+    .main-section-right {
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar .logo {
+        display: none;
+    }
+
+
+    .form-section {
+        width: 100%;
+    }
+
+    .main-section-left {
+        min-width: 100px;
+    }
+
+    .creator .name {
+        font-size: 2rem;
+    }
+
+    .contact h5 {
+        color: rgb(58, 56, 56);
+    }
+
+    .contact .social a {
+        margin: 0 5px;
+    }
+
+    ::-webkit-scrollbar {
+        height: 3px;
+        /* height for horizontal scrollbar */
+        width: 0px;
+        /* width for vertical scrollbar */
+    }
+
+}
