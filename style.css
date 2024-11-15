@@ -433,7 +433,7 @@ footer {
     color: blue;
 }
 */
-.social a:nth-child(1) {
+.social a:first-child {
     color: rgb(0, 180, 12);
 
 }
